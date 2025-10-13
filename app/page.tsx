@@ -105,10 +105,10 @@ export default function Home() {
                     </div>
                 </div>
                 <div
-                    className="squircle relative flex min-h-[370px] w-full max-w-[400px] items-end overflow-hidden rounded-[80px] not-dark:shadow-2xl"
+                    className="squircle relative flex min-h-[370px] w-full max-w-[400px] items-end overflow-hidden rounded-[38px] not-dark:shadow-2xl supports-[corner-shape:superellipse(2)]:rounded-[76px]"
                     style={{
                         // @ts-expect-error - doesn't have types yet.
-                        cornerShape: 'superellipse(2.5)',
+                        cornerShape: 'superellipse(2)',
                     }}
                 >
                     <Image
