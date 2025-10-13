@@ -19,9 +19,9 @@ export default function Home() {
     const [animationDuration, setAnimationDuration] = useState(0.4)
 
     return (
-        <div className="min-h-screen justify-items-center gap-16 p-6 pb-20 sm:p-20">
+        <div className="mx-auto min-h-screen max-w-2xl gap-16 p-6 pb-20 sm:p-20">
             <main className="flex flex-col items-center gap-8 sm:items-start">
-                <div className="flex w-full flex-wrap justify-between gap-5 opacity-65 transition-opacity hover:opacity-100">
+                <div className="flex w-full max-w-[400px] flex-wrap justify-between gap-5 opacity-65 transition-opacity hover:opacity-100">
                     <div className="flex flex-col justify-between gap-2.5 max-sm:w-full">
                         <span className="text-muted-foreground text-sm font-medium">
                             Animation Duration
