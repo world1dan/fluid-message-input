@@ -19,9 +19,9 @@ export default function Home() {
     const [animationDuration, setAnimationDuration] = useState(0.4)
 
     return (
-        <div className="mx-auto min-h-screen max-w-2xl gap-16 p-6 pb-20 sm:p-20">
+        <div className="mx-auto min-h-screen max-w-xl gap-16 p-6 pb-20 sm:p-20">
             <main className="flex flex-col items-center gap-8 sm:items-start">
-                <div className="flex w-full max-w-[400px] flex-wrap justify-between gap-5 opacity-65 transition-opacity hover:opacity-100">
+                <div className="flex w-full flex-wrap justify-between gap-5 opacity-65 transition-opacity hover:opacity-100">
                     <div className="flex flex-col justify-between gap-2.5 max-sm:w-full">
                         <span className="text-muted-foreground text-sm font-medium">
                             Animation Duration
@@ -105,7 +105,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div
-                    className="squircle relative flex min-h-[370px] w-full max-w-[400px] items-end overflow-hidden rounded-[38px] not-dark:shadow-2xl supports-[corner-shape:superellipse(2)]:rounded-[76px]"
+                    className="squircle relative flex min-h-[370px] w-full items-end overflow-hidden rounded-[38px] not-dark:shadow-2xl supports-[corner-shape:superellipse(2)]:rounded-[76px]"
                     style={{
                         // @ts-expect-error - doesn't have types yet.
                         cornerShape: 'superellipse(2)',
@@ -115,12 +115,12 @@ export default function Home() {
                         src={BACKGROUNDS[backgroundIndex]}
                         alt="bg"
                         priority
-                        className="pointer-events-none absolute bottom-0 h-[100%] object-cover object-center select-none"
+                        className="pointer-events-none absolute bottom-0 h-full object-cover object-center select-none"
                     />
                     <MessageInput animationDuration={animationDuration} />
                 </div>
             </main>
-            <footer className="mt-[80px] flex w-full max-w-sm flex-wrap items-center justify-between gap-[32px]">
+            <footer className="mt-18 flex w-full flex-wrap items-center justify-between gap-8">
                 <a
                     className="text-muted-foreground flex items-center gap-2 text-sm font-medium opacity-65 transition-opacity hover:underline hover:underline-offset-4 hover:opacity-100"
                     href="https://github.com/world1dan/fluid-message-input"
